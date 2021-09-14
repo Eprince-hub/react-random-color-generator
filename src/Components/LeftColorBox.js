@@ -32,11 +32,11 @@ function LeftColorBox() {
   // Trying to convert the returned hexColor code to RGB!
 
   const rgbColor = hexValue;
-  const newValue = rgbColor.substring(1);
+  const newValue = rgbColor.slice(1);
 
-  function convertToRGB(hexValue) {
+  function convertToRGB(changeHexValue) {
     const regex = /.{1,2}/g;
-    const newHexValue = hexValue.match(regex);
+    const newHexValue = changeHexValue.match(regex);
     const rgbArrayValue = [
       parseInt(newHexValue[0], 16),
       parseInt(newHexValue[1], 16),
