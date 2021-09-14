@@ -48,7 +48,7 @@ function LeftColorBox() {
   // convertToRGB(newValue);
   const rgbValue = convertToRGB(newValue);
 
-  const [backgroundColor, setBackgroundColor] = useState('black');
+  const [backgroundColor, setBackgroundColor] = useState('#c88b4b');
   return (
     <div className='leftColorBox' style={{ backgroundColor: backgroundColor }}>
       <div className='leftBoxColorValues'>
