@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ButtomButton from './BottomButton';
 
 function LeftColorBox() {
   function generateRandomHex() {
@@ -28,15 +27,37 @@ function LeftColorBox() {
 
     return colorHex;
   }
-  // const hexvalue = LeftColorBox();
+  const hexValue = generateRandomHex();
+
+  // Trying to convert the returned hexColor code to RGB!
+
+  const rgbColor = hexValue;
+  const newValue = rgbColor.substring(1);
+
+  function convertToRGB(hexValue) {
+    const regex = /.{1,2}/g;
+    const newHexValue = hexValue.match(regex);
+    const rgbArrayValue = [
+      parseInt(newHexValue[0], 16),
+      parseInt(newHexValue[1], 16),
+      parseInt(newHexValue[2], 16),
+    ];
+    return rgbArrayValue;
+  }
+
+  // convertToRGB(newValue);
+  const rgbValue = convertToRGB(newValue);
 
   const [backgroundColor, setBackgroundColor] = useState('black');
   return (
     <div className='leftColorBox' style={{ backgroundColor: backgroundColor }}>
-      <h1>SHow hello from the Left box</h1>
+      <div className='leftBoxColorValues'>
+        <h3>{`Hex Value: ${hexValue}`}</h3>
+        <h3>{`RGB Value: rgb(${rgbValue})`}</h3>
+      </div>
       <button
         onClick={() => {
-          setBackgroundColor(generateRandomHex());
+          setBackgroundColor(hexValue);
         }}
       >
         Change the Color

@@ -1,8 +1,8 @@
 import './App.css';
-import ButtomButton from './Components/BottomButton';
 import LeftColorBox from './Components/LeftColorBox';
 import RightColorBox from './Components/RightColorBox';
-import logo from './logo.svg';
+
+// import logo from './logo.svg';
 
 /* function App() {
   return (
@@ -26,9 +26,9 @@ import logo from './logo.svg';
 } */
 
 function App() {
+  // state here
   return (
     <div className='App'>
-      <img src={logo} className='App-logo' alt='logo' />
       {/* Render all my Components here */}
 
       <h1>REACT RANDOM COLOR GENERATOR</h1>
@@ -37,7 +37,8 @@ function App() {
         <LeftColorBox />
         <RightColorBox />
       </div>
-      <ButtomButton />
+
+      <button className='bottomButton'>Generate Random Color</button>
     </div>
   );
 }
