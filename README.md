@@ -1,3 +1,10 @@
+# React color generator
+This program would generate random colors at a click of a button and display the hex value and the rgb values. 
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
