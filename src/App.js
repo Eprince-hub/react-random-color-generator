@@ -1,7 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import ButtomButton from './Components/BottomButton';
+import LeftColorBox from './Components/LeftColorBox';
+import RightColorBox from './Components/RightColorBox';
+import logo from './logo.svg';
 
-function App() {
+/* function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +21,23 @@ function App() {
           Learn React
         </a>
       </header>
+    </div>
+  );
+} */
+
+function App() {
+  return (
+    <div className='App'>
+      <img src={logo} className='App-logo' alt='logo' />
+      {/* Render all my Components here */}
+
+      <h1>REACT RANDOM COLOR GENERATOR</h1>
+
+      <div className='colorBoxes'>
+        <LeftColorBox />
+        <RightColorBox />
+      </div>
+      <ButtomButton />
     </div>
   );
 }
