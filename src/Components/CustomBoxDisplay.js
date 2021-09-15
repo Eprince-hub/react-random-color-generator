@@ -4,7 +4,7 @@ import CustomColor from './CustomColor';
 
 function CustomBoxDisplay() {
   return (
-    <div className='customBoxDisplay'>
+    <div className="customBoxDisplay">
       <CustomColor />
       <CustomBox />
     </div>

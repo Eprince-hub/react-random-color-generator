@@ -4,7 +4,7 @@ import CustomBoxDisplay from './CustomBoxDisplay';
 
 function RightColorBox() {
   return (
-    <div className='rightColorBox'>
+    <div className="rightColorBox">
       <h4>On development</h4>
       <ColorValueDisplay />
       <CustomBoxDisplay />

@@ -50,8 +50,8 @@ function LeftColorBox() {
 
   const [backgroundColor, setBackgroundColor] = useState('#c88b4b');
   return (
-    <div className='leftColorBox' style={{ backgroundColor: backgroundColor }}>
-      <div className='leftBoxColorValues'>
+    <div className="leftColorBox" style={{ backgroundColor: backgroundColor }}>
+      <div className="leftBoxColorValues">
         <h3>{`Hex Value: ${hexValue}`}</h3>
         <h3>{`RGB Value: rgb(${rgbValue})`}</h3>
       </div>
